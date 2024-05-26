@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJU-SHOP</title>
+    <link rel="stylesheet" href="vjushop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Phần 1: Đầu trang -->
+    <header class="header">
+        <div class="header-left">
+            <img src="imgs/vjushop.jpg" alt="Logo" class="logo">
+        </div>
+        <div class="header-center">
+            <nav class="nav">
+                <a href="#" class="nav-item"><i class='bx bx-home'></i>Trang Chủ</a>
+                <a href="#" class="nav-item"><i class='bx bx-phone'></i>Liên Hệ</a>
+                <a href="#" class="nav-item"><i class='bx bx-bell'></i>Thông Báo</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <img src="imgs/user.png" alt="User" class="user-icon">
+            <img src="imgs/cart.png" alt="Cart" class="cart-icon">
+        </div>
+    </header>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm " class="search-input">
+        <button class="search-button"><i class='bx bx-search'></i></button>
+    </div>
+
+    <!-- Ảnh nền và giới thiệu -->
+    <section class="intro">
+        <div class="intro-left">
+            <div class="floating-images">
+                <img src="imgs/nb13.jpg" alt="Food" class="floating-img">
+                <img src="imgs/nb14.jpg" alt="Food" class="floating-img">
+                <img src="imgs/nb16.png" alt="Food" class="floating-img">
+            </div>
+        </div>
+        <div class="intro-right">
+            <h2>
+                <span>THỨC ĂN</span>
+                <br>
+                <span>THƯỢNG HẠNG</span>
+            </h2>
+            <p>VJU-SHOP chuyên cung cấp các món ăn đảm bảo dinh dưỡng <br>
+                hợp vệ sinh đến người dùng,phục vụ người dùng 1 cách
+                hoàn hảo nhất
+            </p>
+            <P>VJU-SHOP mang đến cho các bạn hương vị tuyền thống chuẩn phong <br> cách nhật bản</P>
+            <h3>
+                ĐẾN NGAY VJU SHOP
+            </h3>
+            <button class="buy-now">Mua Ngay</button>
+        </div>
+    </section>
+
+    <!-- Nối giữa phần 1 và phần 2 -->
+    <div class="section-title">
+        <h2>Sản Phẩm Của Chúng Tôi</h2>
+        <img src="imgs/to_bottom.png" alt="Arrow Down" class="arrow-down">
+    </div>
+
+    <!-- Phần 2: Chính -->
+    <section class="main">
+        <div class="products">
+            <!-- 6 khung món ăn -->
+            <div class="product">
+                <img src="imgs/nb2.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: うどん</p>
+                <button onclick="changtext2()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2); " >
+                    <p id="p2">Price: 500円</p>
+                    </button>
+                    
+                    <script>
+                        changtext2 = () =>{
+                            document.getElementById('p2').innerHTML = 'Buy';
+                        }
+                    </script>
+            </div>
+
+            <div class="product">
+                <img src="imgs/nb4.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: すきゃきなべ</p>
+                <button onclick="changtext4()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2);" >
+                    <p id="p4">Price: 500円</p>
+                    </button>
+                    
+                    <script>
+                        changtext4 = () =>{
+                            document.getElementById('p4').innerHTML = 'Buy';
+                        }
+                    </script>
+            </div>
+
+            <div class="product">
+                <img src="imgs/nb3.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: ラーメン</p>
+                <button onclick="changtext3()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2); " >
+                <p id="p3">Price: 500円</p>
+                </button>
+                
+                <script>
+                    changtext3 = () =>{
+                        document.getElementById('p3').innerHTML = 'Buy';
+                    }
+                </script>
+            </div>
+
+            <div class="product">
+                <img src="imgs/nb7.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: そば</p>
+                <button onclick="changtext7()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2);" >
+                    <p id="p7">Price: 500円</p>
+                    </button>
+                    
+                    <script>
+                        changtext7 = () =>{
+                            document.getElementById('p7').innerHTML = 'Buy';
+                        }
+                    </script>
+            </div>
+
+            <div class="product">
+                <img src="imgs/nb10.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: オムライスエッグロール</p>
+                <button onclick="changtext10()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2); " >
+                    <p id="p10">Price: 500円</p>
+                    </button>
+                    
+                    <script>
+                        changtext10 = () =>{
+                            document.getElementById('p10').innerHTML = 'Buy';
+                        }
+                    </script>
+            </div>
+
+            <div class="product">
+                <img src="imgs/nb11.jpg" alt="Food">
+                <div class="stars">★★★★★</div>
+                <p>Name: うな丼 うなぎごはん</p>
+                <button onclick="changtext11()" class="price" style="border: solid 1px rgba(151, 115, 121, 0.6); background-color: rgba(255, 255, 255, 0.2); " >
+                    <p id="p11">Price: 500円</p>
+                    </button>
+                    
+                    <script>
+                        changtext11 = () =>{
+                            document.getElementById('p11').innerHTML = 'Buy';
+                        }
+                    </script>
+            </div>
+        </div>
+        
+        <div class="discount">
+            <div class="discount-left">
+                <img src="imgs/off.jpg" alt="Discount Food">
+            </div>
+            <div class="discount-right">
+                <h2>Giảm Giá Lên Đến 50%</h2>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+                <p>Chào đón khách hàng mua</p>
+                <button class="buy-now">Mua Ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nối phần 2 với phần 3 -->
+    <div class="section-title">
+        <h2>Nhận Xét Của Khách Hàng</h2>
+    </div>
+
+    <!-- Phần 3: Cuối trang -->
+    <footer class="footer">
+        <div class="customer-review">
+            <img src="imgs/avatar_1.png" alt="Customer" class="customer-avatar">
+            <p>
+            VJU SHOP không chỉ là một nhà hàng, mà còn là một trải nghiệm ẩm thực đáng nhớ. <br>
+            Từ dịch vụ, không gian cho đến chất lượng món ăn, tất cả đều hoàn hảo chuẩn theo <br> phong cách Nhật Bản. Đây chắc chắn
+            là một địa điểm lý tưởng cho những ai yêu <br> thích ẩm thực và muốn tìm kiếm một trải nghiệm đẳng cấp.
+            Tôi sẽ chắc chắn quay <br> lại và giới thiệu nhà hàng này cho bạn bè và gia đình.
+            </p>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="footer-links">
+            <img src="imgs/vjushop.jpg" alt="Logo" class="footer-logo">
+            <nav class="footer-nav">
+                <a href="#" class="btn btn-link">Trang Chủ</a>
+                <a href="#"  class="btn btn-link">Liên Hệ</a>
+                <a href="#"  class="btn btn-link">Thông Báo</a>
+            </nav>
+            <div class="contact-us">
+                <h2>Liên Hệ Chúng Tôi</h2>
+                <input class="confirm-inp" type="text" placeholder="Đặt hàng ngay">
+                
+                <button class="confirm-button" >Xác Nhận</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
